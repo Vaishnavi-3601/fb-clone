@@ -10,6 +10,7 @@
         body{
             background-color:#f7f7f7;
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .navbar{
             height: 55px;
@@ -55,7 +56,7 @@
             align-items: center;
             background-color: #f7f7f7;
             padding: 6px;
-            width: 220px;
+            width: 250px;
             height: 25px;
             border-radius: 20px;
             padding-left: 16px ;
@@ -72,26 +73,24 @@
             display: flex;
             width: 100%;
             margin-top: 17px;
-
         }
 
         .left {
             width: 24%; /* Adjust the width as needed */
             margin: 22px;
-            padding: 10px; /* Add padding to create space */
-            overflow-y: auto;
+            padding: 10px; 
         }
-
-        .left a {
-            color: #3b5998;
-
-            margin-bottom: 5px; /* Add some space between links */
+        .left i{
+            color: #1877f2;
         }
-
-        .left h3 {
-            margin-top: 10px; /* Add some space above the "Explore" heading */
+        .left a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            line-height: 2em;
+            color: #1877f2;
+            font-size: 1.2em;
         }
-
 
 
         .middle{
@@ -180,8 +179,13 @@
         .info h4 {
             margin: 0; /* Remove default margin */
             }
+            .card .picture{
+                display: flex;
+            justify-content: center;
+            }
         .card .picture img{
-            width: 100%;
+            width: 90%;
+            height: 500px;
         }
         .right{
             
@@ -192,25 +196,27 @@
         .right iframe{
             width: 100%;
         }
-        .left a{
-            color: #3b5998;
+        
+
+        .like{
+            padding: 0.7em 3.5em 1em 3.5em;
+            display:flex;
         }
-        a{
-            text-decoration: none;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            line-height: 2.2;
+        .like button{
+            background-color: transparent;
+            color: grey;
+            border: none;
+            font-size: 1.3em;
+            margin: auto;
         }
+        
     </style>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="topleft">              
-            <span class="fa-stack small">
-                <i class="fa fa-circle fa-stack-2x icon-background" style="color: #1877f2;"></i>
-                <i class="fa-brands fa-facebook-f fa-stack-1x" style="color: #fff; font-size: 1.6em;"></i>
-            </span>
+            <i class="fa-brands fa-facebook" style="color: #1877f2; font-size: 2.3em; margin: 12px;"></i>
             <div class="search-box">
                 <i class="fa-solid fa-magnifying-glass"></i> &nbsp; &nbsp;
                 <input type="text" placeholder="Search facebook" id="search_fb">    
@@ -225,10 +231,6 @@
         <div class="topright">
             <span class="fa-stack small">
                 <i class="fa fa-circle fa-stack-2x icon-background" style="color: #f7f7f7;"></i>
-                <i class="fa-solid fa-ellipsis-vertical fa-stack-1x" style="color: black;"></i>
-            </span>
-            <span class="fa-stack small">
-                <i class="fa fa-circle fa-stack-2x icon-background" style="color: #f7f7f7;"></i>
                 <i class="fa-brands fa-facebook-messenger fa-stack-1x" style="color: black;"></i>
             </span>
             <span class="fa-stack small">
@@ -238,39 +240,28 @@
             <a href="login.html">
                 <span class="fa-stack small">
                     <i class="fa fa-circle fa-stack-2x icon-background" style="color: #f7f7f7; "></i>
-                    <i class="fa-solid fa-user fa-stack-1x" style="color: #fff;"></i>
+                    <i class="fa-solid fa-user fa-stack-1x" style="color: black;"></i>
                 </span>
             </a>
+            <span class="fa-stack small">
+                <i class="fa fa-circle fa-stack-2x icon-background" style="color: #f7f7f7;"></i>
+                <i class="fa-solid fa-ellipsis-vertical fa-stack-1x" style="color: black;"></i>
+            </span>
         </div>
     </nav>
     <div class="container">
         <div class="left">
-            <a href="home.html">News Feed</a><br>
-            <a href="home.html">Messenger</a><br>
-            <a href="home.html">Watch</a><br>
-            <a href="home.html">Marketplace</a><br>
-            <h3>Explore</h3>
-            <a href="home.html">Event</a><br>
-            <a href="home.html">Pages</a><br>
-            <a href="home.html">Groups</a><br>
-
-            <a href="home.html">News Feed</a><br>
-            <a href="home.html">Messenger</a><br>
-            <a href="home.html">Watch</a><br>
-            <a href="home.html">Marketplace</a><br>
-            <h3>Explore</h3>
-            <a href="home.html">Event</a><br>
-            <a href="home.html">Pages</a><br>
-            <a href="home.html">Groups</a><br>
-
-            <a href="home.html">News Feed</a><br>
-            <a href="home.html">Messenger</a><br>
-            <a href="home.html">Watch</a><br>
-            <a href="home.html">Marketplace</a><br>
-            <h3>Explore</h3>
-            <a href="home.html">Event</a><br>
-            <a href="home.html">Pages</a><br>
-            <a href="home.html">Groups</a><br>
+            <a href="home.html"><i class="fa-solid fa-user-group"></i> Find Friends</a><br>
+            <a href="home.html"><i class="fa-brands fa-facebook"></i> Welcome</a><br>
+            <a href="home.html"><i class="fa-solid fa-clock-rotate-left"></i> Memories</a><br>
+            <a href="home.html"><i class="fa-solid fa-bookmark"></i> Saved</a><br>
+            <a href="home.html"><i class="fa-solid fa-people-group"></i> Groups</a><br>
+            <a href="home.html"><i class="fa-solid fa-video"></i> Video</a><br>
+            <a href="home.html"><i class="fa-solid fa-shop"></i> Marketplace</a><br>
+            <a href="home.html"><i class="fa-solid fa-photo-film"></i> Feeds</a><br>
+            <a href="home.html"><i class="fa-regular fa-calendar"></i> Event</a><br>
+            <a href="home.html"><i class="fa-solid fa-chart-simple"></i> Ads Nanager</a><br>
+            <a href="home.html"><i class="fa-regular fa-newspaper"></i> News Feed</a><br>
         </div>
         
         <div class="middle">
@@ -342,13 +333,21 @@
                     </div>
                     <p>Did #Bhartisingh succeed in recreating this #Kajoldevgan's Iconic look? 🤔 #Pinkvilla</p>
                 </div>
+                <hr>
                 <div class="picture">
                     <img src="img/self.jpg" alt="">
+                </div>
+                <hr>
+                <div class="like">
+                    <button><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                    <button><i class="fa-regular fa-comment"></i> Comment</button>
+                    <button><i class="fa-brands fa-whatsapp"></i> Send</button>
+                    <button><i class="fa-solid fa-share"></i> Share</button>
                 </div>
             </div>
         </div>
         <div class="right">
-            <iframe src="http://yourblog.blogspot.com" frameborder="0" width=930 height=500 scrolling=yes allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bz6y4GLM9P4?si=lL9b1-zMpT3oXbPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <iframe width="60" height="235" src="https://www.youtube.com/embed/FkQWpQd9Zdo?si=IG9n4iSnPm9a8kT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
