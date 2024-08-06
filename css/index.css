@@ -1,0 +1,235 @@
+body {
+    background-color: #f7f7f7;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    height: 55px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+
+}
+
+.topleft {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 13px;
+}
+
+.topmiddle {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topmiddle a i {
+    font-size: 1.3em;
+    margin: 0px 40px 0px 40px;
+}
+
+.topmiddle a:first-child i {
+    color: #1877f2;
+}
+
+.topmiddle a i:active {
+    color: #1877f2;
+}
+
+.topright {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.fa-stack.small {
+    font-size: 1.3em;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 6px;
+    width: 250px;
+    height: 25px;
+    border-radius: 20px;
+    padding-left: 16px;
+}
+
+#search_fb {
+    border: none;
+    background-color: transparent;
+}
+
+/* main container */
+
+
+.container {
+    display: flex;
+    width: 100%;
+    margin-top: 17px;
+}
+
+.left {
+    width: 24%;
+    /* Adjust the width as needed */
+    margin: 22px;
+    padding: 10px;
+}
+
+.left i {
+    color: #1877f2;
+    margin-right: 15px;
+}
+
+.left a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #626262;
+    width: fit-content;
+}
+
+
+.middle {
+    width: 50%;
+    margin: 10px;
+}
+
+.middle .story .main-story {
+    width: 140px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 5px;
+}
+
+.middle .story .main-story img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.middle .story .profile img {
+    border-radius: 50%;
+    width: 28%;
+    margin: 5px 0 0 5px;
+    opacity: 1;
+    padding: 2px;
+    border: solid #1877f2;
+}
+
+.Main-post {
+    background-color: #fff;
+    height: auto;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+
+.Main-post .post {
+    display: flex;
+    align-items: center;
+}
+
+.Main-post .post input {
+    width: 70%;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    font-size: 17px;
+}
+
+.Main-post .post2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 30%;
+    text-align: center;
+}
+
+.p-upload i {
+    font-size: 30px;
+    margin-right: 8px;
+}
+
+.card {
+    width: 100%;
+    background-color: #fff;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+    margin-right: 20px;
+    /* Add some space between the image and the h4 element */
+}
+
+.info img {
+    width: 2%;
+    border-radius: 50%;
+    padding: 2px;
+    border: solid #1877f2;
+    margin-right: 10px;
+    /* Add some space between the image and the h4 element */
+}
+
+.info h4 {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.card .picture {
+    display: flex;
+    justify-content: center;
+}
+
+.card .picture img {
+    width: 90%;
+    height: 500px;
+}
+
+.right {
+
+    width: 28%;
+    margin: 10px;
+    background-color: white;
+}
+
+.right iframe {
+    width: 100%;
+}
+
+
+.like {
+    padding: 0.7em 3.5em 1em 3.5em;
+    display: flex;
+}
+
+.like button {
+    background-color: transparent;
+    color: grey;
+    border: none;
+    font-size: 1.3em;
+    margin: auto;
+}
